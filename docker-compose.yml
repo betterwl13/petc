@@ -8,6 +8,8 @@ services:
     scale: 2
     expose:
       - "8080"
+    links:
+      - db
 
   proxy:
     build:
